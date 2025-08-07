@@ -6,8 +6,56 @@
 }
 
 body{
+    background-image: url(../Dados/imagens/background_loja.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: auto;
     overflow-x: hidden;
-    padding: 20px
-    
+    padding: 120px 20px;
+}
+
+h1, h2 {
+    color: #fff;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 7px;
+}
+
+.first {
+    background-color: #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: #373176c2 0px 6px 24px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p{
+    color: #ddd;
+}
+
+#user{
+    color: #d96c12;
+    font-weight: bolder;
+}
+
+#idPerfil{
+    color: blue;
+    font-weight: bolder;
+}
+
+.fa-cart-shopping {
+    font-size: 50px;
+    opacity: 0.6;
+    transition: all 200ms ease-in-out;
+}
+
+.fa-cart-shopping:hover {
+    color: rgb(28, 24, 138);
+    opacity: 1;
+    cursor: pointer;
 }
