@@ -29,9 +29,9 @@ function showPassword(){
 
     if(input_senha.getAttribute('type') === 'password'){
         input_senha.setAttribute('type', 'text')
-        img_eye.setAttribute('src', '/imagens/eyeclose.png') 
+        img_eye.setAttribute('src', '/Dados/imagens/eyeclose.png') 
     }else{
         input_senha.setAttribute('type', 'password')
-        img_eye.setAttribute('src', '/imagens/eye.png')
+        img_eye.setAttribute('src', '/Dados/imagens/eye.png')
     }
 }
