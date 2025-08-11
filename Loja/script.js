@@ -1,59 +1,57 @@
-let produtos
+let produtos;
 
-window.onload = function(){
-    var storedUser = localStorage.getItem("usuario")
-    var user = JSON.parse(storedUser)
+window.onload = function () {
+    var storedUser = localStorage.getItem("usuario");
+    var user = JSON.parse(storedUser);
 
-    document.getElementById("user").innerText = user.name
-    document.getElementById("perfil").innerText = user.dataEntrada
-    document.getElementById("idPerfil").innerText = user.id
-
-}
+    document.getElementById("user").innerText = user.name;
+    document.getElementById("perfil").innerText = user.dataEntrada;
+    document.getElementById("idPerfil").innerText = user.id;
+};
 
 document.addEventListener("DOMContentLoaded", function () {
     fetch('../Dados/mock.json')
-    .then((response) => response.json())
-    .then((data) => {
-        produtos = data
+        .then((response) => response.json())
+        .then((data) => {
+            produtos = data;
 
-        const produtosContainer = document.getElementById('produtos-container')
-        produtos.forEach(produtos, index) => {
+            const produtosContainer = document.getElementById('produtos-container');
+            produtos.forEach((produtos, index) => {
 
-            const card = document.createElement('div')
-            card.className =  'card'
-            card.style.width = '18rem'
-            card.style.marginRight = '10px'
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.style.width = '18rem';
+                card.style.marginRight = '10px';
 
-            const imagem = document.createElement('img')
-            imagem.src = produto.imagem
-            imagem.className = 'card-img-top'
+                const imagem = document.createElement('img');
+                imagem.src = produtos.imagem;
+                imagem.className = 'card-img-top';
 
-            const cardBody = document.createElement('div')
-            cardBody.className = 'card-body'
+                const cardBody = document.createElement('div');
+                cardBody.className = 'card-body';
 
-            const cardTitle = document.createElement('h5')
-            cardTitle.className = 'card-title'
-            cardTitle.textContent = produtos.descricao
+                const cardTitle = document.createElement('h5');
+                cardTitle.className = 'card-title';
+                cardTitle.textContent = produtos.descricao;
 
-            const cardText = document.createElement('p')
-            cardText.textContent = 'card-title'
-            cardText.textContent = 'Preço: $' + produto.preco.toFixed(2)
-            
-            const btnAdicionarAoCarrinho = document.createElement('a')
-            btnAdicionarAoCarrinho.href = '#'
-            btnAdicionarAoCarrinho.className = 'btn btn-primary btn-adicionar-ao-carrinho'
-            btnAdicionarAoCarrinho.textContent = 'Adicionar ao carrinho'
-            btnAdicionarAoCarrinho.setAttribute('data-indice', index)
+                const cardText = document.createElement('p');
+                cardText.textContent = 'Preço: $' + produtos.preco.toFixed(2);
 
-            cardBody.appendChild(cardTitle)
-            cardBody.appendChild(cardText)
-            cardBody.appendChild(btnAdicionarAoCarrinho)
+                const btnAdicionarAoCarrinho = document.createElement('a');
+                btnAdicionarAoCarrinho.href = '#';
+                btnAdicionarAoCarrinho.className = 'btn btn-primary btn-adicionar-ao-carrinho';
+                btnAdicionarAoCarrinho.textContent = 'Adicionar ao carrinho';
+                btnAdicionarAoCarrinho.setAttribute('data-indice', index);
 
-            card.appendChild(imagem)
-            card.appendChild(cardBody)
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                cardBody.appendChild(btnAdicionarAoCarrinho);
 
-            produtosContainer.appendChild(card)
+                card.appendChild(imagem);
+                card.appendChild(cardBody);
 
-        });
-    }).catch((error) => console.error('Erro ao carregar dados', error))
+                produtosContainer.appendChild(card);
+            });
+        })
+        .catch((error) => console.error('Erro ao carregar dados', error));
 });
