@@ -2,55 +2,55 @@
     {
         "id": 1,
         "descricao": "Tralalero Tralala",
-        "imagem": "/Dados/tralalero.webp",
+        "imagem": "/Dados/tralalelo.webp",
         "preco": 600.0
     },
     {
         "id": 2,
         "descricao": "Trippi Troppi",
-        "imagem": "./Dados/trippi.jfif",
+        "imagem": "/Dados/trippi.jfif",
         "preco": 50.0
     },
     {
         "id": 3,
         "descricao": "Lirili Larila",
-        "imagem": "",
+        "imagem": "/Dados/liriri.png",
         "preco": 200.0
     },
     {
         "id": 4,
         "descricao": "Tung Tung Tung Sahur",
-        "imagem": "",
+        "imagem": "/Dados/sahur.jpg",
         "preco": 650.0
     },
     {
         "id": 5,
         "descricao": "Bombardino Crocodilo",
-        "imagem": "",
+        "imagem": "/Dados/crocodilo.jfif",
         "preco": 600.0
     },
     {
         "id": 6,
         "descricao": "Bombombini Gusini",
-        "imagem": "",
+        "imagem": "/Dados/liriri.png",
         "preco": 200.0
     },
     {
         "id": 7,
         "descricao": "Ballerina capuccina",
-        "imagem": "",
+        "imagem": "/Dados/liriri.png",
         "preco": 350.0
     },
     {
         "id": 8,
         "descricao": "La Vaca Saturnita",
-        "imagem": "",
+        "imagem": "/Dados/liriri.png",
         "preco": 400.0
     },
     {
         "id": 9,
         "descricao": "Garamararam",
-        "imagem": "",
+        "imagem": "/Dados/liriri.png",
         "preco": 700.0
     }
 ]

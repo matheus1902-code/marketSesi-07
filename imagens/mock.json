@@ -1,4 +1,4 @@
-{
+[
     {
         "id": 1,
         "descricao": "Tralalero Tralala",
@@ -52,5 +52,5 @@
         "descricao": "Garamararam",
         "imagem": "",
         "preco": 5.0
-    },
-}
+    }
+]
