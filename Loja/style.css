@@ -44,11 +44,20 @@ h1, h2{
 
 .p{
     color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 #user{
     color: #78faff;
     font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #idPerfil{
