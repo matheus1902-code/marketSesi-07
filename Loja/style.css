@@ -16,7 +16,7 @@ body{
 }
 
 h1, h2 {
-    color: #fff;
+    color: #ffffff;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 7px;
@@ -39,7 +39,7 @@ h1, h2 {
 }
 
 #user{
-    color: #d96c12;
+    color: #3168cf;
     font-weight: bolder;
 }
 
