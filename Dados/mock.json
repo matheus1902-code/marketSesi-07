@@ -3,54 +3,60 @@
         "id": 1,
         "descricao": "Tralalero Tralala",
         "imagem": "/Dados/imagens/tralalelo.webp",
-        "preco": 600.0
+        "preco": 590.0
     },
     {
         "id": 2,
         "descricao": "Trippi Troppi",
         "imagem": "/Dados/imagens/trippi.jfif",
-        "preco": 50.0
+        "preco": 49.90
     },
     {
         "id": 3,
         "descricao": "Lirili Larila",
         "imagem": "/Dados/imagens/liriri.png",
-        "preco": 200.0
+        "preco": 199.99
     },
     {
         "id": 4,
         "descricao": "Tung Tung Tung Sahur",
         "imagem": "/Dados/imagens/sahur.jpg",
-        "preco": 650.0
+        "preco": 649.90
     },
     {
         "id": 5,
         "descricao": "Bombardino Crocodilo",
         "imagem": "/Dados/imagens/crocodilo.jfif",
-        "preco": 600.0
+        "preco": 589.90
     },
     {
         "id": 6,
         "descricao": "Bombombini Gusini",
         "imagem": "/Dados/imagens/gusini.jfif",
-        "preco": 200.0
+        "preco": 199.0
     },
     {
         "id": 7,
         "descricao": "Ballerina capuccina",
         "imagem": "/Dados/imagens/capuccina.jfif",
-        "preco": 350.0
+        "preco": 349.90
     },
     {
         "id": 8,
         "descricao": "La Vaca Saturnita",
         "imagem": "/Dados/imagens/la vaca.jpg",
-        "preco": 400.0
+        "preco": 399.90
     },
     {
         "id": 9,
         "descricao": "Garamararam",
         "imagem": "/Dados/imagens/garam.jfif",
-        "preco": 700.0
+        "preco": 699.90
+    },
+    {
+        "id": 10,
+        "descricao": "Pot hotspot",
+        "imagem": "/Dados/imagens/pot hotspot.webp",
+        "preco": 649.90
     }
 ]

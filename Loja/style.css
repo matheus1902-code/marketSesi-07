@@ -22,8 +22,15 @@ h1, h2 {
     letter-spacing: 7px;
 }
 
+h1, h2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .first {
-    background-color: #ddd;
+    background-color: #152163;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,30 +39,41 @@ h1, h2 {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    z-index: 999;
 }
 
 .p{
     color: #ddd;
 }
 
+
 #user{
-    color: #3168cf;
+    color: #78faff;
     font-weight: bolder;
 }
 
 #idPerfil{
-    color: blue;
+    color: white;
     font-weight: bolder;
+}
+
+.idPerfil{
+    color: white;
+    font-weight: bolder;
+}
+
+#perfil{
+    color: white;
 }
 
 .fa-cart-shopping {
     font-size: 50px;
-    opacity: 0.6;
     transition: all 200ms ease-in-out;
+    color: #ffffff;
 }
 
 .fa-cart-shopping:hover {
-    color: rgb(28, 24, 138);
+    color: #ffffffb5;
     opacity: 1;
     cursor: pointer;
 }
@@ -66,4 +84,31 @@ h1, h2 {
     align-items: center;
     justify-content: center;
     gap: 10px;
+  
 }
+
+.card-title{
+    color: rgb(255, 255, 255);
+}
+
+.card{
+    color: #ffffff;
+    padding: 0 !important;
+    border: 2px solid #68c0ffc2;
+    box-shadow: #68c0ffc2 0px 6px 24px;
+}
+
+.card-body{
+    background-color: #3f3838;
+}
+
+.btn-adicionar-ao-carrinho{
+    background-color: #3f3838;
+    border-color: #ffffff;
+}
+
+.btn-adicionar-ao-carrinho:hover{
+    background-color: #152163;
+    border-color: transparent;
+}
+
