@@ -1,18 +1,24 @@
 $(document).ready(function(){
+    // recupera o carrinho do local storage
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
 
+    //atribuit a uma variavel a lista do html e do total da compra
     const listaElement = $('#lista')
     const totalElement = $('#total')
 
+    //funcao para exibir o carrinho num for each, ou for, percorrendo o array de produtos
     function exibirCarrinho(){
+        //limpa o conteudo atual da lista no cache no sistema
         listaElement.empty()
 
+        //variavel para calcular o total
         let totalPreco = 0
 
         $.each(carrinho, function(index, item) {
+            //cria um elemento de lista para cada item
             const listItem = $('<li>').text(`${item.descricao} - Preço: $${item.preco.toFixed(2)}`)
 
-
+            //cria um botao de remover o item
             const removeButton = $('<button>').text('❌').css('margin-left', '10px').click(function(){
                 removerItemDoCarrinho(index)
             })
@@ -20,6 +26,7 @@ $(document).ready(function(){
             listItem.append(removeButton)
             listaElement.append(listItem)
 
+            //adiciona o preço do item ao total
             totalPreco += item.preco
         })
 
@@ -41,6 +48,8 @@ function gerarPedido(){
     const totalElement = document.getElementById("total")
 
     const listaClone = listaElement.cloneNode(true)
+
+    $(listaClone).find('button').remove()
 
     const listaHtml = listaClone.innerHTML
     const totalHtml = totalElement.innerHTML
